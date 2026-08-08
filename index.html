@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Listening — Volumes 1&ndash;9 | @IELTSWithSPAXCE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root{
+    --ink:#181a2a;
+    --muted:#686e85;
+    --faint:#9498ac;
+    --bg1:#eef1fc;
+    --bg2:#f7f3fb;
+    --card:#ffffff;
+    --line:#e7e8f4;
+    --indigo:#4338ca;
+    --indigo-dark:#332ba3;
+    --indigo-soft:#eceafe;
+    --pink:#ec4899;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(1000px 560px at 18% -8%, rgba(255,205,120,.30), transparent 62%),
+      radial-gradient(700px 420px at 100% 15%, rgba(255,170,120,.14), transparent 60%),
+      repeating-linear-gradient(90deg, rgba(120,80,40,.05) 0px, rgba(120,80,40,.05) 1px, transparent 1px, transparent 64px),
+      linear-gradient(160deg,#f4ecd9 0%, #ecdfc2 45%, #e2cfa2 100%);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    position:relative;
+  }
+  body.dark-mode{
+    background:
+      radial-gradient(1000px 560px at 18% -8%, rgba(255,190,110,.16), transparent 62%),
+      radial-gradient(700px 420px at 100% 15%, rgba(255,150,90,.09), transparent 60%),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.14) 0px, rgba(0,0,0,.14) 1px, transparent 1px, transparent 64px),
+      linear-gradient(160deg,#1c140c 0%, #241a10 45%, #170f09 100%);
+  }
+  .dust-motes{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;}
+  .mote{position:absolute; border-radius:50%; background:radial-gradient(circle, rgba(255,224,170,.55), transparent 70%); filter:blur(1px); animation:moteDrift linear infinite;}
+  @keyframes moteDrift{
+    0%{transform:translate(0,0); opacity:0;}
+    10%{opacity:.55;}
+    90%{opacity:.4;}
+    100%{transform:translate(var(--dx,30px), -420px); opacity:0;}
+  }
+  @media (prefers-reduced-motion: reduce){ .mote{animation:none; display:none;} }
+  .wrap{max-width:1280px;margin:0 auto;padding:0 22px;position:relative;z-index:1;}
+
+  .top-strip{display:flex; align-items:center; gap:14px; padding:20px 0 0; flex-wrap:wrap;}
+  .strip-spacer{flex:1; min-width:0;}
+  .eyebrow{
+    flex:2; min-width:0; text-align:center;
+    font-family:'Plus Jakarta Sans',sans-serif;
+    font-weight:800; font-size:clamp(24px,3.6vw,36px);
+    letter-spacing:1px; line-height:1;
+    background:linear-gradient(120deg,var(--indigo) 0%, var(--pink) 55%, var(--indigo) 100%);
+    background-size:200% auto; -webkit-background-clip:text; background-clip:text; color:transparent;
+    text-transform:uppercase; animation:shine 5s linear infinite;
+    filter:drop-shadow(0 2px 10px rgba(67,56,202,0.25));
+  }
+  @keyframes shine{ to{background-position:200% center;} }
+  .profile-pill{
+    display:flex; align-items:center; gap:12px;
+    background:var(--card); border:1px solid var(--line); border-radius:999px;
+    padding:9px 16px 9px 9px; text-decoration:none; color:var(--ink);
+    box-shadow:0 6px 20px rgba(60,50,120,0.08);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    flex:1; min-width:260px; max-width:400px;
+  }
+  .profile-pill:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(60,50,120,0.14); border-color:var(--indigo-soft);}
+  .avatar{position:relative; width:46px;height:46px;border-radius:50%; background:conic-gradient(from 200deg, var(--indigo), var(--pink), var(--indigo)); padding:2.5px; flex-shrink:0;}
+  .avatar .inner{width:100%;height:100%;border-radius:50%; background:var(--ink); display:flex;align-items:center;justify-content:center; color:#fff;font-size:17px;}
+  .profile-pill .stack{display:flex;flex-direction:column;line-height:1.22; flex:1;}
+  .profile-pill .stack .name{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:15.5px; letter-spacing:0.1px; color:var(--ink);}
+  .profile-pill .stack .handle{font-size:12.5px; color:var(--muted); font-weight:500;}
+  .tg-btn{width:38px;height:38px;border-radius:50%; background:linear-gradient(135deg,#34b3f1,#1e90da); display:flex;align-items:center;justify-content:center; color:#fff;font-size:15px; text-decoration:none; box-shadow:0 6px 16px rgba(30,144,218,0.4); flex-shrink:0; animation:pulseRing 2.6s ease-in-out infinite;}
+  @keyframes pulseRing{0%,100%{box-shadow:0 6px 16px rgba(30,144,218,0.4), 0 0 0 0 rgba(30,144,218,0.4);} 50%{box-shadow:0 6px 16px rgba(30,144,218,0.4), 0 0 0 8px rgba(30,144,218,0);}}
+
+  h1{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:clamp(26px,4.2vw,38px); margin:22px 0 8px; letter-spacing:-0.5px;}
+  .sub{color:var(--muted); font-size:15px; max-width:66ch; margin:0 0 22px;}
+
+  .controls{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:8px;}
+  .search-box{position:relative; flex:1; min-width:230px;}
+  .search-box i{position:absolute; left:18px; top:50%; transform:translateY(-50%); color:var(--faint); font-size:14px;}
+  .search-box input{width:100%; padding:15px 18px 15px 44px; border-radius:999px; border:1px solid var(--line); background:var(--card); font-size:14.5px; color:var(--ink); outline:none; box-shadow:0 4px 14px rgba(70,60,140,0.05); transition:border-color .15s ease, box-shadow .15s ease;}
+  .search-box input:focus{border-color:var(--indigo); box-shadow:0 0 0 4px var(--indigo-soft);}
+
+  .surprise-btn{display:flex;align-items:center;gap:8px; padding:0 20px; border-radius:999px; background:var(--card); border:1px solid var(--line); color:var(--indigo); font-weight:700; font-size:14px; cursor:pointer; box-shadow:0 4px 14px rgba(70,60,140,0.05); transition:transform .15s ease, background .15s ease, color .15s ease; white-space:nowrap;}
+  .surprise-btn:hover{background:var(--indigo); color:#fff; transform:translateY(-1px);}
+
+  .icon-toggle-btn{width:38px;height:38px;border-radius:50%; background:var(--card); border:1px solid var(--line); display:flex;align-items:center;justify-content:center; color:var(--muted); font-size:14px; cursor:pointer; box-shadow:0 4px 14px rgba(70,60,140,0.05); transition:transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease; flex-shrink:0;}
+  .icon-toggle-btn:hover{transform:translateY(-1px); color:var(--indigo); border-color:var(--indigo-soft);}
+  .icon-toggle-btn.is-on{background:var(--ink); color:#fff; border-color:var(--ink);}
+
+  .progress-card{display:flex; flex-direction:column; gap:14px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; margin:0 0 20px; box-shadow:0 3px 10px rgba(60,50,120,0.04);}
+  .progress-top{display:flex; align-items:center; gap:20px; flex-wrap:wrap;}
+  .progress-head{display:flex; align-items:center; gap:14px; flex:1 1 220px; min-width:200px;}
+  .progress-ring{position:relative; width:52px;height:52px; flex-shrink:0;}
+  .progress-ring svg{transform:rotate(-90deg);}
+  .progress-ring circle{fill:none; stroke-width:5;}
+  .progress-ring .ring-bg{stroke:var(--indigo-soft);}
+  .progress-ring .ring-fill{stroke:var(--indigo); stroke-linecap:round; transition:stroke-dashoffset .5s ease;}
+  .progress-ring .ring-label{position:absolute; top:0; right:0; bottom:0; left:0; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; font-family:'Plus Jakarta Sans',sans-serif; color:var(--ink);}
+  .progress-copy .p-title{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:15px; color:var(--ink);}
+  .progress-copy .p-sub{font-size:12px; color:var(--muted); margin-top:2px;}
+  .progress-stats{display:flex; gap:0; flex:0 0 auto;}
+  .stat-block{display:flex; align-items:center; gap:10px; padding:0 14px; border-left:1px solid var(--line);}
+  .stat-block:first-of-type{border-left:0; padding-left:0;}
+  .stat-num{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:18px; color:var(--ink); line-height:1;}
+  .stat-label{font-size:11px; color:var(--muted); margin-top:2px;}
+  .stat-icon{font-size:15px; color:var(--indigo); width:20px; text-align:center;}
+  .progress-actions{display:flex; align-items:center; flex-wrap:wrap; gap:8px;}
+  .pill-btn{font-size:12px; font-weight:700; color:var(--muted); background:var(--card); border:1px solid var(--line); border-radius:999px; padding:7px 14px; cursor:pointer; white-space:nowrap; transition:color .15s ease, border-color .15s ease, background .15s ease;}
+  .pill-btn:hover{border-color:var(--indigo-soft); color:var(--indigo);}
+  .pill-btn-danger{color:var(--faint);}
+  .pill-btn-danger:hover{color:#c0392b; border-color:#e6b3ac;}
+  #copySummaryBtn{color:var(--indigo); background:var(--indigo-soft); border-color:transparent;}
+  #copySummaryBtn:hover{filter:brightness(0.96);}
+
+  .toolbar-row{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:0 0 10px;}
+  .count-badge{font-size:13px; color:var(--faint); font-weight:500;}
+  .count-badge b{color:var(--ink);}
+  .chip-group{display:flex; gap:8px; flex-wrap:wrap;}
+  .chip{font-size:12.5px; font-weight:700; color:var(--muted); background:var(--card); border:1px solid var(--line); border-radius:999px; padding:7px 14px; cursor:pointer; transition:background .15s ease, color .15s ease, border-color .15s ease;}
+  .chip:hover{border-color:var(--indigo-soft); color:var(--indigo);}
+  .chip.active{background:var(--indigo); color:#fff; border-color:var(--indigo);}
+  .view-toggle{display:flex; gap:4px; background:var(--card); border:1px solid var(--line); border-radius:999px; padding:3px;}
+  .view-btn{width:30px;height:28px; border-radius:999px; border:0; background:none; color:var(--faint); cursor:pointer; display:flex;align-items:center;justify-content:center; font-size:12.5px; transition:background .15s ease, color .15s ease;}
+  .view-btn.active{background:var(--ink); color:#fff;}
+
+  .vol-chip-row{display:flex; gap:8px; flex-wrap:wrap; margin:0 0 20px;}
+
+  main{padding-bottom:70px;}
+  .vol-section{margin-bottom:34px;}
+  .vol-section.vol-hidden{display:none;}
+  .vol-head{display:flex; align-items:baseline; gap:10px; margin:0 0 14px; padding-bottom:8px; border-bottom:1px solid var(--line);}
+  .vol-head h2{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:19px; margin:0; letter-spacing:-0.2px;}
+  .vol-count{font-size:12.5px; color:var(--faint); font-weight:600;}
+
+  .grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+  @media (max-width:1100px){.grid{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:820px){.grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:600px){
+    .grid{grid-template-columns:1fr;}
+    .eyebrow{order:3; flex:1 1 100%; text-align:left; font-size:26px; margin-top:6px;}
+  }
+
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 18px 16px; text-decoration:none; color:var(--ink);
+    display:flex; flex-direction:column; gap:10px; position:relative;
+    box-shadow:0 3px 10px rgba(60,50,120,0.04);
+    transition:transform .18s ease, box-shadow .22s ease, border-color .18s ease;
+    cursor:pointer;
+    transform-origin:left center;
+  }
+  .card:hover{transform:translateY(-4px); border-color:transparent; box-shadow:0 16px 32px -8px var(--glow, rgba(67,56,202,0.28));}
+  .card.is-explored{border-color:rgba(22,163,74,.35);}
+
+  /* book-opening click feedback: a quick page-turn swing before the new tab takes over */
+  .card.opening{animation:cardOpen .32s cubic-bezier(.3,0,.4,1) forwards;}
+  @keyframes cardOpen{
+    0%{transform:translateY(-4px) rotateY(0deg) scale(1);}
+    45%{transform:translateY(-6px) rotateY(-14deg) scale(.98); box-shadow:0 20px 38px -10px var(--glow, rgba(67,56,202,.35));}
+    100%{transform:translateY(-2px) rotateY(-4deg) scale(.99); box-shadow:0 10px 20px -8px var(--glow, rgba(67,56,202,.3));}
+  }
+  .card.opening::after{
+    content:''; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+    background:linear-gradient(115deg, transparent 30%, rgba(255,255,255,.55) 48%, transparent 66%);
+    background-size:220% 220%; background-position:120% 0;
+    animation:cardShine .38s ease forwards;
+  }
+  @keyframes cardShine{ to{ background-position:-20% 0; } }
+
+  /* staggered reveal when a shelf drawer opens, instead of an abrupt appearance */
+  .drawer.open .card{animation:cardReveal .38s cubic-bezier(.2,.7,.3,1) backwards; animation-delay:calc(var(--i, 0) * 45ms);}
+  @keyframes cardReveal{
+    from{opacity:0; transform:translateY(14px) scale(.97);}
+    to{opacity:1; transform:translateY(0) scale(1);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .card.opening, .card.opening::after, .drawer.open .card{animation:none !important;}
+  }
+
+  .card-top{display:flex; align-items:flex-start; justify-content:space-between; gap:8px;}
+  .tag{font-size:10.5px; font-weight:700; color:var(--indigo); background:var(--indigo-soft); padding:5px 9px; border-radius:999px; letter-spacing:0.3px; white-space:nowrap;}
+  .icon-badge{width:34px;height:34px;border-radius:11px; display:flex;align-items:center;justify-content:center; font-size:14.5px; flex-shrink:0; transition:transform .25s ease;}
+  .card:hover .icon-badge{transform:rotate(-8deg) scale(1.08);}
+  .card h3{font-family:'Plus Jakarta Sans',sans-serif; font-size:15.5px; font-weight:700; margin:2px 0 0; line-height:1.32;}
+  .card p{font-size:12.5px; color:var(--muted); margin:0; flex-grow:1;}
+  .meta{display:flex; gap:14px; font-size:11.5px; color:var(--faint);}
+  .meta span{display:flex;align-items:center;gap:5px;}
+  .go{font-size:12.5px; font-weight:700; color:var(--indigo); display:flex; align-items:center; gap:6px;}
+  .go i{font-size:10.5px; transition:transform .18s ease;}
+  .card:hover .go i{transform:translate(2px,-2px);}
+
+  .fav-btn{width:26px; height:26px; border-radius:50%; border:1px solid var(--line); background:var(--card); display:flex; align-items:center; justify-content:center; color:var(--faint); cursor:pointer; font-size:11px; transition:color .15s ease, border-color .15s ease, transform .15s ease; flex-shrink:0;}
+  .fav-btn:hover{transform:scale(1.1); color:#f5b942; border-color:#f5b942;}
+  .fav-btn.is-fav{color:#f5b942; border-color:#f5b942; background:#fff8e6;}
+
+  .explored-badge{position:absolute; top:-7px; right:14px; width:22px;height:22px; border-radius:50%; background:#16a34a; color:#fff; display:none; align-items:center; justify-content:center; font-size:10.5px; box-shadow:0 3px 8px rgba(22,163,74,.4);}
+  .card.is-explored .explored-badge{display:flex;}
+
+  .grid.view-list{grid-template-columns:1fr !important;}
+  .grid.view-list .card{flex-direction:row; align-items:center; gap:14px; padding:12px 18px;}
+  .grid.view-list .card-top{flex-direction:column-reverse; align-items:center; gap:6px;}
+  .grid.view-list .card p{display:none;}
+  .grid.view-list .go{white-space:nowrap;}
+
+  .empty{text-align:center; padding:60px 20px; color:var(--faint); font-size:14.5px; display:none;}
+  .empty i{font-size:26px; color:var(--indigo); display:block; margin-bottom:12px;}
+
+  footer{border-top:1px solid var(--line); padding:22px 0 44px; text-align:center; font-size:12.5px; color:var(--faint);}
+  footer a{color:var(--indigo); text-decoration:none; font-weight:700;}
+
+  #toast{position:fixed; left:50%; bottom:28px; transform:translate(-50%,20px); background:var(--ink); color:#fff; font-size:13px; font-weight:600; padding:12px 20px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.25); opacity:0; pointer-events:none; transition:opacity .25s ease, transform .25s ease; z-index:50; display:flex; align-items:center; gap:8px;}
+  #toast.show{opacity:1; transform:translate(-50%,0);}
+  #toast i{color:#ffd27a;}
+
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important;} }
+
+  body.dark-mode{background:linear-gradient(160deg,#171826 0%, #1c1d2e 55%, #191a28 100%); color:#e9e9f2;}
+  body.dark-mode .profile-pill, body.dark-mode .search-box input, body.dark-mode .surprise-btn, body.dark-mode .card, body.dark-mode .icon-toggle-btn, body.dark-mode .progress-card, body.dark-mode .chip, body.dark-mode .view-toggle, body.dark-mode .pill-btn, body.dark-mode .fav-btn{background:#23243a; border-color:#33344c;}
+  body.dark-mode h1, body.dark-mode .progress-copy .p-title, body.dark-mode .progress-ring .ring-label, body.dark-mode .card h3, body.dark-mode .vol-head h2, body.dark-mode .stat-num{color:#f2f2f9;}
+  body.dark-mode .sub, body.dark-mode .card p, body.dark-mode .count-badge, body.dark-mode .progress-copy .p-sub, body.dark-mode .meta, body.dark-mode .chip, body.dark-mode .vol-count{color:#a6a7c4;}
+  body.dark-mode .count-badge b{color:#f2f2f9;}
+  body.dark-mode .profile-pill .name{color:#f2f2f9;}
+  body.dark-mode .search-box input{color:#e9e9f2;}
+  body.dark-mode .search-box input::placeholder{color:#7a7b9c;}
+  body.dark-mode footer, body.dark-mode .vol-head{border-color:#33344c;}
+  body.dark-mode .empty{color:#7a7b9c;}
+  body.dark-mode .progress-ring .ring-bg{stroke:#33344c;}
+  body.dark-mode .stat-block{border-color:#33344c;}
+  body.dark-mode .pill-btn{color:#a6a7c4;}
+
+  /* ===== v3 additions: volume accent dots + chips ===== */
+  .vol-dot{width:10px;height:10px;border-radius:50%; background:var(--accent,var(--indigo)); flex-shrink:0;}
+  .vol-chip{position:relative; padding-left:22px;}
+  .vol-chip::before{content:''; position:absolute; left:10px; top:50%; transform:translateY(-50%); width:7px;height:7px;border-radius:50%; background:var(--accent,var(--indigo));}
+  .vol-chip.active{background:var(--accent,var(--indigo)); border-color:var(--accent,var(--indigo)); color:#fff;}
+  .vol-chip.active::before{background:#fff;}
+
+  /* ===== v3 additions: done ribbon (corner triangle) ===== */
+  .card{position:relative; overflow:hidden;}
+  .done-ribbon{position:absolute; top:0; right:0; width:0; height:0; border-style:solid; border-width:0 46px 46px 0; border-color:transparent var(--accent,var(--indigo)) transparent transparent; opacity:0; transition:opacity .2s ease; pointer-events:none;}
+  .done-ribbon i{position:absolute; top:5px; right:-40px; color:#fff; font-size:11px;}
+  .card.is-explored .done-ribbon{opacity:1;}
+  .card.is-explored{border-color:transparent;}
+
+  /* ===== v3 additions: today's pick ===== */
+  .pick-card{
+    position:relative; display:flex; gap:20px; align-items:center; flex-wrap:wrap;
+    background:linear-gradient(120deg, var(--card) 0%, var(--indigo-soft) 140%);
+    border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 24px; margin-bottom:16px;
+    box-shadow:0 10px 26px -14px rgba(67,56,202,0.35);
+    overflow:hidden;
+  }
+  .pick-ribbon{position:absolute; top:14px; right:-32px; background:linear-gradient(120deg,var(--indigo),var(--pink)); color:#fff; font-size:10.5px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; padding:5px 38px; transform:rotate(38deg); box-shadow:0 3px 10px rgba(67,56,202,.3);}
+  .pick-icon{width:52px;height:52px;border-radius:14px; background:var(--indigo-soft); color:var(--indigo); display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;}
+  .pick-body{flex:1; min-width:220px;}
+  .pick-eyebrow{font-size:11px; font-weight:700; letter-spacing:.06em; color:var(--faint); text-transform:uppercase; margin-bottom:4px;}
+  .pick-title{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:18px; margin:0 0 4px; color:var(--ink);}
+  .pick-sub{font-size:12.5px; color:var(--muted); margin:0;}
+  .pick-go{display:inline-flex; align-items:center; gap:8px; background:var(--indigo); color:#fff; padding:10px 18px; border-radius:999px; text-decoration:none; font-weight:700; font-size:13.5px; white-space:nowrap; transition:transform .15s ease, background .15s ease;}
+  .pick-go:hover{transform:translateY(-1px); background:var(--indigo-dark);}
+  body.dark-mode .pick-card{background:linear-gradient(120deg, #23243a 0%, #2c2450 140%);}
+  body.dark-mode .pick-title{color:#f2f2f9;}
+  body.dark-mode .pick-sub{color:#a6a7c4;}
+
+  /* ===== v3 additions: reading plan ribbon ===== */
+  .plan-bar{display:flex; align-items:center; gap:14px; flex-wrap:wrap; background:var(--card); border:1px solid var(--line); border-radius:999px; padding:10px 18px; margin-bottom:20px; font-size:13px; box-shadow:0 3px 10px rgba(60,50,120,0.04);}
+  .plan-bar i.plan-icon{color:var(--indigo); font-size:14px;}
+  .plan-text{flex:1; min-width:180px; color:var(--muted);}
+  .plan-text b{color:var(--ink); font-weight:700;}
+  .plan-actions{display:flex; align-items:center; gap:8px;}
+  .plan-date-input{background:#fff; border:1px solid var(--line); color:var(--ink); border-radius:8px; padding:6px 9px; font-size:12.5px; font-family:'Inter',sans-serif;}
+  .plan-btn{font-size:12px; font-weight:700; color:var(--indigo); background:var(--indigo-soft); border:1px solid transparent; border-radius:999px; padding:6px 13px; cursor:pointer; white-space:nowrap;}
+  .plan-btn:hover{filter:brightness(0.97);}
+  .plan-btn-ghost{background:transparent; color:var(--faint); border:1px solid var(--line);}
+  body.dark-mode .plan-bar{background:#23243a; border-color:#33344c;}
+  body.dark-mode .plan-text{color:#a6a7c4;}
+  body.dark-mode .plan-text b{color:#f2f2f9;}
+  body.dark-mode .plan-date-input{background:#1c1d2e; color:#e9e9f2; border-color:#33344c;}
+
+  /* ===== v3 additions: jump nav ===== */
+  .jump-nav{display:flex; gap:6px; flex-wrap:wrap; margin:0 0 20px;}
+  .jump-pill{font-size:11.5px; font-weight:700; color:var(--muted); background:var(--card); border:1px solid var(--line); border-radius:999px; padding:5px 11px; cursor:pointer; transition:transform .12s ease, border-color .15s ease;}
+  .jump-pill:hover{transform:translateY(-1px); border-color:var(--indigo-soft);}
+  body.dark-mode .jump-pill{background:#23243a; border-color:#33344c; color:#a6a7c4;}
+
+  .results-bar{display:none; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; background:var(--indigo-soft); border:1px solid transparent; border-radius:12px; padding:10px 16px; margin-bottom:18px; font-size:13px; color:var(--ink);}
+  body.dark-mode .results-bar{background:#2c2450; color:#f2f2f9;}
+
+  #printLog{display:none;}
+  @media print{
+    body *{visibility:hidden;}
+    #printLog, #printLog *{visibility:visible;}
+    #printLog{display:block; position:absolute; left:0; top:0; width:100%; color:#111; background:#fff; padding:24px;}
+    #printLog h1{font-family:Georgia,serif; font-size:22px; margin:0 0 4px;}
+    #printLog .print-sub{font-size:12px; color:#555; margin-bottom:18px;}
+    #printLog table{width:100%; border-collapse:collapse; font-size:11px;}
+    #printLog th, #printLog td{border:1px solid #ccc; padding:5px 7px; text-align:left;}
+    #printLog th{background:#eee;}
+  }
+
+  /* ===== v4: glow effects ===== */
+  .card{--glow:rgba(67,56,202,0.28);}
+  .card:hover{box-shadow:0 18px 40px -10px var(--glow), 0 0 0 1px var(--glow);}
+  .icon-badge{box-shadow:0 0 0 0 transparent; transition:box-shadow .25s ease, transform .25s ease;}
+  .card:hover .icon-badge{box-shadow:0 0 18px -2px var(--glow);}
+  .surprise-btn:hover{box-shadow:0 0 22px -4px rgba(67,56,202,.55);}
+  .pick-go{box-shadow:0 0 0 0 rgba(67,56,202,0);}
+  .pick-go:hover{box-shadow:0 6px 22px -4px rgba(67,56,202,.55);}
+  .plan-btn:hover{box-shadow:0 0 16px -4px rgba(67,56,202,.4);}
+  .chip.active{box-shadow:0 0 14px -3px rgba(67,56,202,.45);}
+  .vol-chip.active{box-shadow:0 0 16px -3px var(--accent);}
+  .progress-ring .ring-fill{filter:drop-shadow(0 0 5px rgba(67,56,202,.55));}
+  .pick-card{box-shadow:0 10px 26px -14px rgba(67,56,202,0.35), 0 0 40px -22px rgba(236,72,153,.5);}
+  .pick-icon{box-shadow:0 0 20px -4px rgba(67,56,202,.4);}
+  @keyframes glowPulse{0%,100%{box-shadow:0 0 14px -4px var(--glow-pulse,rgba(67,56,202,.5));} 50%{box-shadow:0 0 26px -4px var(--glow-pulse,rgba(67,56,202,.75));}}
+  .pick-ribbon{animation:glowPulse 2.6s ease-in-out infinite; --glow-pulse:rgba(236,72,153,.6);}
+  body.dark-mode .card:hover .icon-badge{box-shadow:0 0 22px -2px var(--glow);}
+
+  /* ===== v5: bookshelf spines (book-cover look) + wooden bookcase backing ===== */
+  #shelfWrap{margin-bottom:22px;}
+  .bookcase{
+    background:linear-gradient(155deg,#8a5a34 0%,#6b4423 100%);
+    border-radius:16px;
+    padding:18px 16px 6px;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.35), inset 0 -3px 10px rgba(0,0,0,.25), 0 10px 26px -14px rgba(70,45,20,.5);
+  }
+  body.dark-mode .bookcase{
+    background:linear-gradient(155deg,#4a3220 0%,#2e2013 100%);
+  }
+  .shelf-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px 12px; align-items:end;}
+  @media (max-width:900px){.shelf-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.shelf-grid{grid-template-columns:1fr;}}
+  .shelf-plank{
+    grid-column:1 / -1; height:16px; margin:2px 0 10px; border-radius:3px;
+    background:linear-gradient(180deg,#c99a5b 0%,#9c6b34 55%,#7a4f24 100%);
+    box-shadow:0 6px 12px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.25);
+  }
+
+  .spine{
+    --accent:#4338ca; --glow:rgba(67,56,202,0.28);
+    position:relative; display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,.32) 0%, rgba(0,0,0,.32) 9px, transparent 9px),
+      linear-gradient(155deg, var(--accent) 0%, var(--accent) 55%, rgba(0,0,0,.28) 100%);
+    border:0; border-radius:5px 11px 11px 5px;
+    padding:16px 16px 16px 20px; cursor:pointer; color:#fff;
+    box-shadow:0 8px 16px -6px rgba(0,0,0,.4), inset -1px 0 0 rgba(255,255,255,.15);
+    transition:transform .18s ease, box-shadow .2s ease;
+    overflow:hidden; min-height:64px;
+  }
+  .spine::after{
+    content:''; position:absolute; top:0; right:0; width:0; height:0;
+    border-style:solid; border-width:0 15px 15px 0;
+    border-color:transparent rgba(255,255,255,.3) transparent transparent;
+    filter:drop-shadow(-1px 1px 1px rgba(0,0,0,.2));
+  }
+  .spine:hover{transform:translateY(-5px) rotate(-.4deg); box-shadow:0 16px 30px -8px var(--glow), 0 8px 16px -6px rgba(0,0,0,.45), inset -1px 0 0 rgba(255,255,255,.15);}
+  .spine[aria-expanded="true"]{box-shadow:0 0 0 2px rgba(255,255,255,.55), 0 18px 34px -10px var(--glow), inset -1px 0 0 rgba(255,255,255,.15);}
+  .spine-label{font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:14.5px; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.35); flex:1;}
+  .spine-count{font-size:11.5px; font-weight:700; color:#fff; background:rgba(0,0,0,.22); border-radius:999px; padding:3px 9px; flex-shrink:0;}
+  .spine-chevron{color:rgba(255,255,255,.8); font-size:12px; transition:transform .25s ease, color .2s ease; flex-shrink:0;}
+  .spine[aria-expanded="true"] .spine-chevron{transform:rotate(180deg); color:#fff;}
+
+  .shelf-toolbar{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px;}
+  .shelf-toggle-btn{font-size:12px; font-weight:700; color:var(--muted); background:var(--card); border:1px solid var(--line); border-radius:999px; padding:7px 14px; cursor:pointer; transition:border-color .15s ease, color .15s ease;}
+  .shelf-toggle-btn:hover{border-color:var(--indigo-soft); color:var(--indigo);}
+  body.dark-mode .shelf-toggle-btn{background:#23243a; border-color:#33344c; color:#a6a7c4;}
+
+  .drawer{max-height:0; overflow:hidden; transition:max-height .4s ease;}
+  .drawer.open{max-height:8000px;}
+  .drawer-inner{padding:16px 2px 6px;}
+</style>
+</head>
+
+<body>
+  <div class="dust-motes" id="dustMotes" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="top-strip">
+      <a class="profile-pill" href="https://t.me/IELTSWithSPAXCE" target="_blank" rel="noopener noreferrer">
+        <span class="avatar"><span class="inner"><i class="fa-solid fa-headphones-simple"></i></span></span>
+        <span class="stack">
+          <span class="name">IELTS Listening</span>
+          <span class="handle">@IELTSWithSPAXCE</span>
+        </span>
+        <span class="tg-btn"><i class="fa-solid fa-paper-plane"></i></span>
+      </a>
+      <span class="eyebrow">VOLUME 1&ndash;9</span>
+      <span class="strip-spacer"></span>
+      <button class="icon-toggle-btn" id="darkModeBtn" type="button" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <h1>IELTS Listening &mdash; Volumes 1&ndash;9</h1>
+    <p class="sub">78 full 4-part practice tests across nine volumes. Pick any test below to open it &mdash; each one plays real audio, is self-scoring, and explains every answer with evidence from the transcript.</p>
+
+    <div class="pick-card" id="pickCard">
+      <span class="pick-ribbon">Today&rsquo;s pick</span>
+      <span class="pick-icon"><i class="fa-solid fa-shuffle" id="pickIcon"></i></span>
+      <div class="pick-body">
+        <div class="pick-eyebrow" id="pickEyebrow">Loading&hellip;</div>
+        <h3 class="pick-title" id="pickTitle">&nbsp;</h3>
+        <p class="pick-sub" id="pickSub">Picked fresh each day from what you haven&rsquo;t explored yet.</p>
+      </div>
+      <a class="pick-go" id="pickGo" href="#" target="_blank" rel="noopener">Start now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="progress-card">
+      <div class="progress-top">
+        <div class="progress-head">
+          <div class="progress-ring">
+            <svg width="52" height="52" viewBox="0 0 52 52">
+              <circle class="ring-bg" cx="26" cy="26" r="22"></circle>
+              <circle class="ring-fill" id="progressRingFill" cx="26" cy="26" r="22" stroke-dasharray="138.2" stroke-dashoffset="138.2"></circle>
+            </svg>
+            <div class="ring-label" id="progressRingLabel">0%</div>
+          </div>
+          <div class="progress-copy">
+            <div class="p-title"><span id="progressCount">0</span> / 78 explored</div>
+            <div class="p-sub">Tracked on this device only.</div>
+          </div>
+        </div>
+        <div class="progress-stats">
+          <div class="stat-block">
+            <i class="fa-solid fa-fire stat-icon"></i>
+            <div><div class="stat-num" id="streakStat">0</div><div class="stat-label">day streak</div></div>
+          </div>
+          <div class="stat-block">
+            <i class="fa-solid fa-book stat-icon"></i>
+            <div><div class="stat-num">78</div><div class="stat-label">tests</div></div>
+          </div>
+          <div class="stat-block">
+            <i class="fa-solid fa-star stat-icon"></i>
+            <div><div class="stat-num" id="favCountStat">0</div><div class="stat-label">favorites</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-actions">
+        <button class="pill-btn" id="copySummaryBtn" type="button"><i class="fa-solid fa-copy"></i> Copy summary</button>
+        <button class="pill-btn" id="printLogBtn" type="button"><i class="fa-solid fa-print"></i> Print log</button>
+        <button class="pill-btn pill-btn-danger" id="progressResetBtn" type="button"><i class="fa-solid fa-rotate-left"></i> Reset progress</button>
+      </div>
+    </div>
+
+    <div class="plan-bar" id="planBar">
+      <i class="fa-solid fa-compass plan-icon"></i>
+      <span class="plan-text" id="planText">Set a target date and I&rsquo;ll work out a daily pace to get through all 78 tests.</span>
+      <div class="plan-actions" id="planActionsIdle">
+        <input type="date" class="plan-date-input" id="planDateInput">
+        <button class="plan-btn" id="planSetBtn" type="button">Set goal</button>
+      </div>
+      <div class="plan-actions" id="planActionsActive" style="display:none;">
+        <button class="plan-btn plan-btn-ghost" id="planClearBtn" type="button">Clear goal</button>
+      </div>
+    </div>
+
+    <div id="toast"><i class="fa-solid fa-star"></i><span id="toastMsg"></span></div>
+
+    <div class="controls">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="searchInput" type="text" placeholder="Search by volume, test number, or topic&hellip;" autocomplete="off">
+      </div>
+      <button class="surprise-btn" id="surpriseBtn" type="button"><i class="fa-solid fa-shuffle"></i> Surprise me</button>
+    </div>
+    <div class="toolbar-row">
+      <span class="count-badge"><b id="visibleCount">78</b> tests found</span>
+      <div class="chip-group" id="filterChips">
+        <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="unexplored" type="button">Unexplored</button>
+        <button class="chip" data-filter="explored" type="button">Explored</button>
+        <button class="chip" data-filter="favorites" type="button"><i class="fa-solid fa-star" style="margin-right:4px;"></i>Favorites</button>
+      </div>
+      <div class="view-toggle" id="viewToggle">
+        <button class="view-btn active" data-view="grid" type="button" title="Grid view" aria-label="Grid view"><i class="fa-solid fa-table-cells-large"></i></button>
+        <button class="view-btn" data-view="list" type="button" title="List view" aria-label="List view"><i class="fa-solid fa-list"></i></button>
+      </div>
+    </div>
+    <div class="results-bar" id="resultsBar">
+      <span id="resultsBarText"></span>
+      <button class="jump-pill" id="clearFiltersBtn" type="button"><i class="fa-solid fa-xmark" style="margin-right:5px;"></i>Clear</button>
+    </div>
+
+    <div id="shelfWrap">
+      <div class="shelf-toolbar">
+        <span class="count-badge"><i class="fa-solid fa-book-open" style="margin-right:6px; color:var(--indigo);"></i>Tap a volume to open it, like pulling a book off the shelf.</span>
+        <button class="shelf-toggle-btn" id="shelfToggleBtn" type="button"><i class="fa-solid fa-up-right-and-down-left-from-center" style="margin-right:6px;"></i>Expand all</button>
+      </div>
+      <div class="bookcase">
+      <div class="shelf-grid" id="shelfGrid">
+
+        <button class="spine" id="spine-1" data-spine="1" type="button" aria-expanded="false" aria-controls="drawer-1" style="--accent:#4338ca; --glow:rgba(67,56,202,0.28);">
+          <span class="spine-label">Volume 1</span>
+          <span class="spine-count">10</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <button class="spine" id="spine-2" data-spine="2" type="button" aria-expanded="false" aria-controls="drawer-2" style="--accent:#db2777; --glow:rgba(219,39,119,0.28);">
+          <span class="spine-label">Volume 2</span>
+          <span class="spine-count">10</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <button class="spine" id="spine-3" data-spine="3" type="button" aria-expanded="false" aria-controls="drawer-3" style="--accent:#0d9488; --glow:rgba(13,148,136,0.28);">
+          <span class="spine-label">Volume 3</span>
+          <span class="spine-count">10</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <div class="shelf-plank" aria-hidden="true"></div>
+        <button class="spine" id="spine-4" data-spine="4" type="button" aria-expanded="false" aria-controls="drawer-4" style="--accent:#d97706; --glow:rgba(217,119,6,0.28);">
+          <span class="spine-label">Volume 4</span>
+          <span class="spine-count">10</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <button class="spine" id="spine-5" data-spine="5" type="button" aria-expanded="false" aria-controls="drawer-5" style="--accent:#7c3aed; --glow:rgba(124,58,237,0.28);">
+          <span class="spine-label">Volume 5</span>
+          <span class="spine-count">10</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <button class="spine" id="spine-6" data-spine="6" type="button" aria-expanded="false" aria-controls="drawer-6" style="--accent:#16a34a; --glow:rgba(22,163,74,0.28);">
+          <span class="spine-label">Volume 6</span>
+          <span class="spine-count">6</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <div class="shelf-plank" aria-hidden="true"></div>
+        <button class="spine" id="spine-7" data-spine="7" type="button" aria-expanded="false" aria-controls="drawer-7" style="--accent:#0891b2; --glow:rgba(8,145,178,0.28);">
+          <span class="spine-label">Volume 7</span>
+          <span class="spine-count">8</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <button class="spine" id="spine-8" data-spine="8" type="button" aria-expanded="false" aria-controls="drawer-8" style="--accent:#e11d48; --glow:rgba(225,29,72,0.28);">
+          <span class="spine-label">Volume 8</span>
+          <span class="spine-count">6</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+        <button class="spine" id="spine-9" data-spine="9" type="button" aria-expanded="false" aria-controls="drawer-9" style="--accent:#65a30d; --glow:rgba(101,163,13,0.28);">
+          <span class="spine-label">Volume 9</span>
+          <span class="spine-count">8</span>
+          <i class="fa-solid fa-chevron-down spine-chevron" aria-hidden="true"></i>
+        </button>
+
+      </div>
+      </div>
+    </div>
+
+    <main>
+
+      <div class="drawer" id="drawer-1" data-volume="1" style="--accent:#4338ca; --glow:rgba(67,56,202,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="1">
+        <a class="card" data-search="volume 1 test 1 beechen festival clothes and equipment reusable-letter matching" data-test="v1t1" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v1t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
+          <h3>Beechen Festival, Clothes and Equipment &amp; Reusable-letter Matching</h3>
+          <p>IELTS Listening practice test featuring Beechen Festival, Clothes and Equipment, Reusable-letter Matching.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 2 rental property application form pre-school family centre supermarket layout" data-test="v1t2" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v1t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Rental Property Application Form, Pre-school Family Centre &amp; Supermarket Layout</h3>
+          <p>IELTS Listening practice test featuring Rental Property Application Form, Pre-school Family Centre, Supermarket Layout.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 3 riverdale pre-school sentence completion mcq + part 3 mcq/choose-two" data-test="v1t3" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v1t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Riverdale Pre-school, Sentence Completion &amp; MCQ + Part 3 Mcq/choose-two</h3>
+          <p>IELTS Listening practice test featuring Riverdale Pre-school, Sentence Completion, MCQ + Part 3 Mcq/choose-two.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 4 music alive agency fishing competition exhibition features" data-test="v1t4" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v1t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Music Alive Agency, Fishing Competition &amp; Exhibition Features</h3>
+          <p>IELTS Listening practice test featuring Music Alive Agency, Fishing Competition, Exhibition Features.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 5 new guinea sentences + tribe darren interview water hyacinth" data-test="v1t5" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v1t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+          <h3>New Guinea Sentences + Tribe, Darren Interview &amp; Water Hyacinth</h3>
+          <p>IELTS Listening practice test featuring New Guinea Sentences + Tribe, Darren Interview, Water Hyacinth.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 6 tour booking enquiry form assignment feedback bird research" data-test="v1t6" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v1t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+          <h3>Tour Booking Enquiry Form, Assignment Feedback &amp; Bird Research</h3>
+          <p>IELTS Listening practice test featuring Tour Booking Enquiry Form, Assignment Feedback, Bird Research.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 7 rented property info form comments on activities rejection reasons note" data-test="v1t7" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v1t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Rented Property Info Form, Comments on Activities &amp; Rejection Reasons Note</h3>
+          <p>IELTS Listening practice test featuring Rented Property Info Form, Comments on Activities, Rejection Reasons Note.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 8 washing machine warranty city traffic features hotel department problems" data-test="v1t8" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v1t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Washing Machine Warranty, City Traffic Features &amp; Hotel Department Problems</h3>
+          <p>IELTS Listening practice test featuring Washing Machine Warranty, City Traffic Features, Hotel Department Problems.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 9 course registration gift shop / lockers music attitudes" data-test="v1t9" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%209%20LISTENING.html" target="_blank" rel="noopener" style="--i:8; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 09</span>
+            <button class="fav-btn" data-fav="v1t9" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t9')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+          <h3>Course Registration, Gift Shop / Lockers &amp; Music Attitudes</h3>
+          <p>IELTS Listening practice test featuring Course Registration, Gift Shop / Lockers, Music Attitudes.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 1 test 10 damaged fridge report scotland tourist attractions suvs" data-test="v1t10" data-volume="1" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%201%20TEST%2010%20LISTENING.html" target="_blank" rel="noopener" style="--i:9; --glow:rgba(67,56,202,0.28); --accent:#4338ca;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 1 &middot; TEST 10</span>
+            <button class="fav-btn" data-fav="v1t10" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v1t10')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(67,56,202,0.14); color:#4338ca;"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+          <h3>Damaged Fridge Report, Scotland Tourist Attractions &amp; Suvs</h3>
+          <p>IELTS Listening practice test featuring Damaged Fridge Report, Scotland Tourist Attractions, Suvs.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-2" data-volume="2" style="--accent:#db2777; --glow:rgba(219,39,119,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="2">
+        <a class="card" data-search="volume 2 test 1 medical consultation wildlife park sentence completion jack &amp; tutor" data-test="v2t1" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v2t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-tree" aria-hidden="true"></i></span>
+          <h3>Medical Consultation, Wildlife Park Sentence Completion &amp; Jack &amp; Tutor</h3>
+          <p>IELTS Listening practice test featuring Medical Consultation, Wildlife Park Sentence Completion, Jack &amp; Tutor.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 2 travel insurance eyesaver charity study options" data-test="v2t2" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v2t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+          <h3>Travel Insurance, Eyesaver Charity &amp; Study Options</h3>
+          <p>IELTS Listening practice test featuring Travel Insurance, Eyesaver Charity, Study Options.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 3 international club crocodile lecture" data-test="v2t3" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v2t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+          <h3>International Club &amp; Crocodile Lecture</h3>
+          <p>IELTS Listening practice test featuring International Club, Crocodile Lecture.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 4 apartments in arillas + bus/ferry/bike aspen ski resort nursing program" data-test="v2t4" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v2t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Apartments in Arillas + Bus/ferry/bike, Aspen Ski Resort &amp; Nursing Program</h3>
+          <p>IELTS Listening practice test featuring Apartments in Arillas + Bus/ferry/bike, Aspen Ski Resort, Nursing Program.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 5 hotel renovation zoo map labelling maori carving" data-test="v2t5" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v2t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Hotel Renovation, Zoo Map Labelling &amp; Maori Carving</h3>
+          <p>IELTS Listening practice test featuring Hotel Renovation, Zoo Map Labelling, Maori Carving.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 6 directions + personal info campus map labelling data collection issues" data-test="v2t6" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v2t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Directions + Personal Info, Campus Map Labelling &amp; Data Collection Issues</h3>
+          <p>IELTS Listening practice test featuring Directions + Personal Info, Campus Map Labelling, Data Collection Issues.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 7 wincham farm vacation jobs study syndicate" data-test="v2t7" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v2t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Wincham Farm, Vacation Jobs &amp; Study Syndicate</h3>
+          <p>IELTS Listening practice test featuring Wincham Farm, Vacation Jobs, Study Syndicate.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 8 membership application form single + choose-two prout pictures" data-test="v2t8" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v2t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+          <h3>Membership Application Form, Single + Choose-two &amp; Prout Pictures</h3>
+          <p>IELTS Listening practice test featuring Membership Application Form, Single + Choose-two, Prout Pictures.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 9 newspaper photo reprint form college plan labelling motorbike presentation" data-test="v2t9" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%209%20LISTENING.html" target="_blank" rel="noopener" style="--i:8; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 09</span>
+            <button class="fav-btn" data-fav="v2t9" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t9')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Newspaper Photo Reprint Form, College Plan Labelling &amp; Motorbike Presentation</h3>
+          <p>IELTS Listening practice test featuring Newspaper Photo Reprint Form, College Plan Labelling, Motorbike Presentation.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 2 test 10 theatre booking form choir statement country/attraction" data-test="v2t10" data-volume="2" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%202%20TEST%2010%20LISTENING.html" target="_blank" rel="noopener" style="--i:9; --glow:rgba(219,39,119,0.28); --accent:#db2777;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 2 &middot; TEST 10</span>
+            <button class="fav-btn" data-fav="v2t10" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v2t10')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(219,39,119,0.14); color:#db2777;"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+          <h3>Theatre Booking Form, Choir Statement &amp; Country/attraction</h3>
+          <p>IELTS Listening practice test featuring Theatre Booking Form, Choir Statement, Country/attraction.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-3" data-volume="3" style="--accent:#0d9488; --glow:rgba(13,148,136,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="3">
+        <a class="card" data-search="volume 3 test 1 fruit picker info membership/gifts value survey" data-test="v3t1" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v3t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Fruit Picker Info, Membership/gifts &amp; Value Survey</h3>
+          <p>IELTS Listening practice test featuring Fruit Picker Info, Membership/gifts, Value Survey.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 2 temporary patient record form attraction/group adult diet lecture" data-test="v3t2" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v3t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-briefcase-medical" aria-hidden="true"></i></span>
+          <h3>Temporary Patient Record Form, Attraction/group &amp; Adult Diet Lecture</h3>
+          <p>IELTS Listening practice test featuring Temporary Patient Record Form, Attraction/group, Adult Diet Lecture.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 3 wcs membership application form spring festival archaeology course" data-test="v3t3" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v3t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
+          <h3>WCS Membership Application Form, Spring Festival &amp; Archaeology Course</h3>
+          <p>IELTS Listening practice test featuring WCS Membership Application Form, Spring Festival, Archaeology Course.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 4 student accommodation museum audio guide reusable-letter country/function" data-test="v3t4" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v3t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Student Accommodation, Museum Audio Guide &amp; Reusable-letter Country/function</h3>
+          <p>IELTS Listening practice test featuring Student Accommodation, Museum Audio Guide, Reusable-letter Country/function.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 5 address + part 2 vacation-job peter marshall interview study syndicate notes + part 4 night-shift" data-test="v3t5" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v3t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+          <h3>Address + Part 2 Vacation-job, Peter Marshall Interview &amp; Study Syndicate Notes + Part 4 Night-shift</h3>
+          <p>IELTS Listening practice test featuring Address + Part 2 Vacation-job, Peter Marshall Interview, Study Syndicate Notes + Part 4 Night-shift.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 6 accommodation request fire safety aspect comments pigeon comments" data-test="v3t6" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v3t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Accommodation Request, Fire Safety Aspect Comments &amp; Pigeon Comments</h3>
+          <p>IELTS Listening practice test featuring Accommodation Request, Fire Safety Aspect Comments, Pigeon Comments.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 7 newspaper photo reprint form college plan labelling project aspect comments" data-test="v3t7" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v3t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Newspaper Photo Reprint Form, College Plan Labelling &amp; Project Aspect Comments</h3>
+          <p>IELTS Listening practice test featuring Newspaper Photo Reprint Form, College Plan Labelling, Project Aspect Comments.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 8 theatre booking choir statements country attractions" data-test="v3t8" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v3t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+          <h3>Theatre Booking, Choir Statements &amp; Country Attractions</h3>
+          <p>IELTS Listening practice test featuring Theatre Booking, Choir Statements, Country Attractions.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 9 party reservation form vacuum cleaner company characteristics textbook features" data-test="v3t9" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%209%20LISTENING.html" target="_blank" rel="noopener" style="--i:8; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 09</span>
+            <button class="fav-btn" data-fav="v3t9" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t9')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+          <h3>Party Reservation Form, Vacuum Cleaner Company Characteristics &amp; Textbook Features</h3>
+          <p>IELTS Listening practice test featuring Party Reservation Form, Vacuum Cleaner Company Characteristics, Textbook Features.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 3 test 10 film club jobs by country drama workshop focus" data-test="v3t10" data-volume="3" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%203%20TEST%2010%20LISTENING.html" target="_blank" rel="noopener" style="--i:9; --glow:rgba(13,148,136,0.28); --accent:#0d9488;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 3 &middot; TEST 10</span>
+            <button class="fav-btn" data-fav="v3t10" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v3t10')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(13,148,136,0.14); color:#0d9488;"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+          <h3>Film Club, Jobs By Country &amp; Drama Workshop Focus</h3>
+          <p>IELTS Listening practice test featuring Film Club, Jobs By Country, Drama Workshop Focus.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-4" data-volume="4" style="--accent:#d97706; --glow:rgba(217,119,6,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="4">
+        <a class="card" data-search="volume 4 test 1 hotel facilities curling sentence completion seracini flow-chart" data-test="v4t1" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v4t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Hotel Facilities, Curling Sentence Completion &amp; Seracini Flow-chart</h3>
+          <p>IELTS Listening practice test featuring Hotel Facilities, Curling Sentence Completion, Seracini Flow-chart.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 2 jackson island holiday grampic campus map labelling geography lesson choose-two" data-test="v4t2" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v4t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Jackson Island Holiday, Grampic Campus Map Labelling &amp; Geography Lesson Choose-two</h3>
+          <p>IELTS Listening practice test featuring Jackson Island Holiday, Grampic Campus Map Labelling, Geography Lesson Choose-two.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 3 customer details form museum collections business analysis methods" data-test="v4t3" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v4t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Customer Details Form, Museum Collections &amp; Business Analysis Methods</h3>
+          <p>IELTS Listening practice test featuring Customer Details Form, Museum Collections, Business Analysis Methods.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 4 party room hire elmsden way map labelling willows studies" data-test="v4t4" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v4t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <h3>Party Room Hire, Elmsden Way Map Labelling &amp; Willows Studies</h3>
+          <p>IELTS Listening practice test featuring Party Room Hire, Elmsden Way Map Labelling, Willows Studies.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 5 school art competition regional park map labelling performance aspect comments" data-test="v4t5" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v4t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>School Art Competition, Regional Park Map Labelling &amp; Performance Aspect Comments</h3>
+          <p>IELTS Listening practice test featuring School Art Competition, Regional Park Map Labelling, Performance Aspect Comments.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 6 renting an apartment driving lessons flow-chart seminar presentation flow-chart" data-test="v4t6" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v4t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Renting an Apartment, Driving Lessons Flow-chart &amp; Seminar Presentation Flow-chart</h3>
+          <p>IELTS Listening practice test featuring Renting an Apartment, Driving Lessons Flow-chart, Seminar Presentation Flow-chart.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 7 holiday rental race village map labelling farmers&#x27; attitudes" data-test="v4t7" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v4t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Holiday Rental, Race Village Map Labelling &amp; Farmers' Attitudes</h3>
+          <p>IELTS Listening practice test featuring Holiday Rental, Race Village Map Labelling, Farmers' Attitudes.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 8 post office package delivery form hotel outdoor facilities map labelling oral history project" data-test="v4t8" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v4t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Post Office Package Delivery Form, Hotel Outdoor Facilities Map Labelling &amp; Oral History Project</h3>
+          <p>IELTS Listening practice test featuring Post Office Package Delivery Form, Hotel Outdoor Facilities Map Labelling, Oral History Project.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 9 airline job scotland scholarship education house diagram labelling" data-test="v4t9" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%209%20LISTENING.html" target="_blank" rel="noopener" style="--i:8; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 09</span>
+            <button class="fav-btn" data-fav="v4t9" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t9')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Airline Job, Scotland Scholarship &amp; Education House Diagram Labelling</h3>
+          <p>IELTS Listening practice test featuring Airline Job, Scotland Scholarship, Education House Diagram Labelling.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 4 test 10 second-hand cars mufs free goods/services walking situations benefits" data-test="v4t10" data-volume="4" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%204%20TEST%2010%20LISTENING.html" target="_blank" rel="noopener" style="--i:9; --glow:rgba(217,119,6,0.28); --accent:#d97706;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 4 &middot; TEST 10</span>
+            <button class="fav-btn" data-fav="v4t10" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v4t10')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(217,119,6,0.14); color:#d97706;"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+          <h3>Second-hand Cars, MUFS Free Goods/services &amp; Walking Situations Benefits</h3>
+          <p>IELTS Listening practice test featuring Second-hand Cars, MUFS Free Goods/services, Walking Situations Benefits.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-5" data-volume="5" style="--accent:#7c3aed; --glow:rgba(124,58,237,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="5">
+        <a class="card" data-search="volume 5 test 1 campsites arthur jones dolphin type characteristics" data-test="v5t1" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v5t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-paw" aria-hidden="true"></i></span>
+          <h3>Campsites, Arthur Jones &amp; Dolphin Type Characteristics</h3>
+          <p>IELTS Listening practice test featuring Campsites, Arthur Jones, Dolphin Type Characteristics.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 2 oz housesitters registration becoming a millionaire science experiment comments" data-test="v5t2" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v5t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+          <h3>Oz Housesitters Registration, Becoming a Millionaire &amp; Science Experiment Comments</h3>
+          <p>IELTS Listening practice test featuring Oz Housesitters Registration, Becoming a Millionaire, Science Experiment Comments.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 3 sailing courses form island facilities/attractions laura&#x27;s research" data-test="v5t3" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v5t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+          <h3>Sailing Courses Form, Island Facilities/attractions &amp; Laura's Research</h3>
+          <p>IELTS Listening practice test featuring Sailing Courses Form, Island Facilities/attractions, Laura's Research.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 4 bakewell travel booking form running competition selective courses" data-test="v5t4" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v5t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+          <h3>Bakewell Travel Booking Form, Running Competition &amp; Selective Courses</h3>
+          <p>IELTS Listening practice test featuring Bakewell Travel Booking Form, Running Competition, Selective Courses.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 5 swimming lessons campus map labelling company job opportunities" data-test="v5t5" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v5t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Swimming Lessons, Campus Map Labelling &amp; Company Job Opportunities</h3>
+          <p>IELTS Listening practice test featuring Swimming Lessons, Campus Map Labelling, Company Job Opportunities.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 6 volunteer work application farm map labelling kathy&#x27;s dissertation" data-test="v5t6" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v5t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Volunteer Work Application, Farm Map Labelling &amp; Kathy's Dissertation</h3>
+          <p>IELTS Listening practice test featuring Volunteer Work Application, Farm Map Labelling, Kathy's Dissertation.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 7 the london relocation services moving office successful presentation flow-chart" data-test="v5t7" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v5t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+          <h3>The London Relocation Services, Moving Office &amp; Successful Presentation Flow-chart</h3>
+          <p>IELTS Listening practice test featuring The London Relocation Services, Moving Office, Successful Presentation Flow-chart.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 8 eco-farm tour muna island music attitudes" data-test="v5t8" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v5t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Eco-farm Tour, Muna Island &amp; Music Attitudes</h3>
+          <p>IELTS Listening practice test featuring Eco-farm Tour, Muna Island, Music Attitudes.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 9 hot air balloon trip campus map labelling peter &amp; lynne / professor smith" data-test="v5t9" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%209%20LISTENING.html" target="_blank" rel="noopener" style="--i:8; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 09</span>
+            <button class="fav-btn" data-fav="v5t9" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t9')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Hot Air Balloon Trip, Campus Map Labelling &amp; Peter &amp; Lynne / Professor Smith</h3>
+          <p>IELTS Listening practice test featuring Hot Air Balloon Trip, Campus Map Labelling, Peter &amp; Lynne / Professor Smith.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 5 test 10 morgan recruitment agency form museum grounds map labelling alice/tim/both" data-test="v5t10" data-volume="5" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%205%20TEST%2010%20LISTENING.html" target="_blank" rel="noopener" style="--i:9; --glow:rgba(124,58,237,0.28); --accent:#7c3aed;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 5 &middot; TEST 10</span>
+            <button class="fav-btn" data-fav="v5t10" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v5t10')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(124,58,237,0.14); color:#7c3aed;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Morgan Recruitment Agency Form, Museum Grounds Map Labelling &amp; Alice/tim/both</h3>
+          <p>IELTS Listening practice test featuring Morgan Recruitment Agency Form, Museum Grounds Map Labelling, Alice/tim/both.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-6" data-volume="6" style="--accent:#16a34a; --glow:rgba(22,163,74,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="6">
+        <a class="card" data-search="volume 6 test 1 sailing courses form working for johnson jones actions at the meeting" data-test="v6t1" data-volume="6" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%206%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(22,163,74,0.28); --accent:#16a34a;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 6 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v6t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v6t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(22,163,74,0.14); color:#16a34a;"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+          <h3>Sailing Courses Form, Working for Johnson Jones &amp; Actions At the Meeting</h3>
+          <p>IELTS Listening practice test featuring Sailing Courses Form, Working for Johnson Jones, Actions At the Meeting.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 6 test 2 booking a residential workshop form parson&#x27;s fruit farm presentation sections" data-test="v6t2" data-volume="6" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%206%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(22,163,74,0.28); --accent:#16a34a;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 6 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v6t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v6t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(22,163,74,0.14); color:#16a34a;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Booking a Residential Workshop Form, Parson's Fruit Farm &amp; Presentation Sections</h3>
+          <p>IELTS Listening practice test featuring Booking a Residential Workshop Form, Parson's Fruit Farm, Presentation Sections.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 6 test 3 get away tours notes/table cross country running event map labelling buildings made of plastic" data-test="v6t3" data-volume="6" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%206%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(22,163,74,0.28); --accent:#16a34a;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 6 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v6t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v6t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(22,163,74,0.14); color:#16a34a;"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <h3>Get Away Tours Notes/table, Cross Country Running Event Map Labelling &amp; Buildings Made of Plastic</h3>
+          <p>IELTS Listening practice test featuring Get Away Tours Notes/table, Cross Country Running Event Map Labelling, Buildings Made of Plastic.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 6 test 4 coxhead motorhomes citadel theatre events assignment on multinational companies" data-test="v6t4" data-volume="6" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%206%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(22,163,74,0.28); --accent:#16a34a;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 6 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v6t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v6t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(22,163,74,0.14); color:#16a34a;"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+          <h3>Coxhead Motorhomes, Citadel Theatre Events &amp; Assignment on Multinational Companies</h3>
+          <p>IELTS Listening practice test featuring Coxhead Motorhomes, Citadel Theatre Events, Assignment on Multinational Companies.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 6 test 5 campsite reservation form talk to new hotel staff presentation on african art" data-test="v6t5" data-volume="6" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%206%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(22,163,74,0.28); --accent:#16a34a;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 6 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v6t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v6t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(22,163,74,0.14); color:#16a34a;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Campsite Reservation Form, Talk to New Hotel Staff &amp; Presentation on African Art</h3>
+          <p>IELTS Listening practice test featuring Campsite Reservation Form, Talk to New Hotel Staff, Presentation on African Art.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 6 test 6 a residence survey the elmsden way map labelling taking part in archaeological excavations" data-test="v6t6" data-volume="6" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%206%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(22,163,74,0.28); --accent:#16a34a;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 6 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v6t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v6t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(22,163,74,0.14); color:#16a34a;"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <h3>A Residence Survey, The Elmsden Way Map Labelling &amp; Taking Part in Archaeological Excavations</h3>
+          <p>IELTS Listening practice test featuring A Residence Survey, The Elmsden Way Map Labelling, Taking Part in Archaeological Excavations.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-7" data-volume="7" style="--accent:#0891b2; --glow:rgba(8,145,178,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="7">
+        <a class="card" data-search="volume 7 test 1 wedding arrangements, clarence house hotel products information group members / report sections" data-test="v7t1" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v7t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Wedding Arrangements, Clarence House Hotel, Products Information &amp; Group Members / Report Sections</h3>
+          <p>IELTS Listening practice test featuring Wedding Arrangements, Clarence House Hotel, Products Information, Group Members / Report Sections.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 2 holiday job objects advice websites" data-test="v7t2" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v7t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+          <h3>Holiday Job, Objects Advice &amp; Websites</h3>
+          <p>IELTS Listening practice test featuring Holiday Job, Objects Advice, Websites.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 3 planning a party summary gap-fill pencil lesson flow chart" data-test="v7t3" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v7t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></span>
+          <h3>Planning a Party, Summary Gap-fill &amp; Pencil Lesson Flow Chart</h3>
+          <p>IELTS Listening practice test featuring Planning a Party, Summary Gap-fill, Pencil Lesson Flow Chart.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 4 superior home appliances complaint form connections application flow chart climate change and allergies" data-test="v7t4" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v7t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
+          <h3>Superior Home Appliances Complaint Form, Connections Application Flow Chart &amp; Climate Change and Allergies</h3>
+          <p>IELTS Listening practice test featuring Superior Home Appliances Complaint Form, Connections Application Flow Chart, Climate Change and Allergies.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 5 library services forest lake campsite map labelling performance aspects" data-test="v7t5" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v7t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Library Services, Forest Lake Campsite Map Labelling &amp; Performance Aspects</h3>
+          <p>IELTS Listening practice test featuring Library Services, Forest Lake Campsite Map Labelling, Performance Aspects.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 6 the london relocation services hollies supermarket induction picture books reasons" data-test="v7t6" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v7t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+          <h3>The London Relocation Services, Hollies Supermarket Induction &amp; Picture Books Reasons</h3>
+          <p>IELTS Listening practice test featuring The London Relocation Services, Hollies Supermarket Induction, Picture Books Reasons.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 7 places to visit with children kenvale school fair map labelling environmental science modules" data-test="v7t7" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v7t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
+          <h3>Places to Visit with Children, Kenvale School Fair Map Labelling &amp; Environmental Science Modules</h3>
+          <p>IELTS Listening practice test featuring Places to Visit with Children, Kenvale School Fair Map Labelling, Environmental Science Modules.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 7 test 8 outdoor activity centre peter&#x27;s vacation job geology presentations" data-test="v7t8" data-volume="7" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%207%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(8,145,178,0.28); --accent:#0891b2;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 7 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v7t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v7t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(8,145,178,0.14); color:#0891b2;"><i class="fa-solid fa-tree" aria-hidden="true"></i></span>
+          <h3>Outdoor Activity Centre, Peter's Vacation Job &amp; Geology Presentations</h3>
+          <p>IELTS Listening practice test featuring Outdoor Activity Centre, Peter's Vacation Job, Geology Presentations.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-8" data-volume="8" style="--accent:#e11d48; --glow:rgba(225,29,72,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="8">
+        <a class="card" data-search="volume 8 test 1 student travel agency enquiry bibliostack library map labelling presentation criticisms" data-test="v8t1" data-volume="8" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%208%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(225,29,72,0.28); --accent:#e11d48;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 8 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v8t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v8t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(225,29,72,0.14); color:#e11d48;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Student Travel Agency Enquiry, Bibliostack Library Map Labelling &amp; Presentation Criticisms</h3>
+          <p>IELTS Listening practice test featuring Student Travel Agency Enquiry, Bibliostack Library Map Labelling, Presentation Criticisms.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 8 test 2 fearnley sports centre lifeguard application becoming a millionaire performance arts course feedback" data-test="v8t2" data-volume="8" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%208%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(225,29,72,0.28); --accent:#e11d48;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 8 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v8t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v8t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(225,29,72,0.14); color:#e11d48;"><i class="fa-solid fa-tree" aria-hidden="true"></i></span>
+          <h3>Fearnley Sports Centre Lifeguard Application, Becoming a Millionaire &amp; Performance Arts Course Feedback</h3>
+          <p>IELTS Listening practice test featuring Fearnley Sports Centre Lifeguard Application, Becoming a Millionaire, Performance Arts Course Feedback.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 8 test 3 beach heads travel city cycle station plan labelling renewable energy discussion" data-test="v8t3" data-volume="8" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%208%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(225,29,72,0.28); --accent:#e11d48;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 8 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v8t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v8t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(225,29,72,0.14); color:#e11d48;"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <h3>Beach Heads Travel, City Cycle Station Plan Labelling &amp; Renewable Energy Discussion</h3>
+          <p>IELTS Listening practice test featuring Beach Heads Travel, City Cycle Station Plan Labelling, Renewable Energy Discussion.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 8 test 4 aa property rentals places comments possible course change" data-test="v8t4" data-volume="8" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%208%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(225,29,72,0.28); --accent:#e11d48;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 8 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v8t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v8t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(225,29,72,0.14); color:#e11d48;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>AA Property Rentals, Places Comments &amp; Possible Course Change</h3>
+          <p>IELTS Listening practice test featuring AA Property Rentals, Places Comments, Possible Course Change.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 8 test 5 arizona travel advice library floor plan labelling essay feedback sentences" data-test="v8t5" data-volume="8" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%208%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(225,29,72,0.28); --accent:#e11d48;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 8 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v8t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v8t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(225,29,72,0.14); color:#e11d48;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Arizona Travel Advice, Library Floor Plan Labelling &amp; Essay Feedback Sentences</h3>
+          <p>IELTS Listening practice test featuring Arizona Travel Advice, Library Floor Plan Labelling, Essay Feedback Sentences.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 8 test 6 shipping of personal belongings kitchen plan labelling bricks made from waste" data-test="v8t6" data-volume="8" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%208%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(225,29,72,0.28); --accent:#e11d48;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 8 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v8t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v8t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(225,29,72,0.14); color:#e11d48;"><i class="fa-solid fa-map" aria-hidden="true"></i></span>
+          <h3>Shipping of Personal Belongings, Kitchen Plan Labelling &amp; Bricks Made From Waste</h3>
+          <p>IELTS Listening practice test featuring Shipping of Personal Belongings, Kitchen Plan Labelling, Bricks Made From Waste.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+      <div class="drawer" id="drawer-9" data-volume="9" style="--accent:#65a30d; --glow:rgba(101,163,13,0.28);">
+        <div class="drawer-inner">
+          <div class="grid" data-vol-grid="9">
+        <a class="card" data-search="volume 9 test 1 sharing a house spring down junior school forensic linguistics" data-test="v9t1" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%201%20LISTENING.html" target="_blank" rel="noopener" style="--i:0; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 01</span>
+            <button class="fav-btn" data-fav="v9t1" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t1')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Sharing a House, Spring Down Junior School &amp; Forensic Linguistics</h3>
+          <p>IELTS Listening practice test featuring Sharing a House, Spring Down Junior School, Forensic Linguistics.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 2 poppy reserve roundhouse flow chart organising a debate" data-test="v9t2" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%202%20LISTENING.html" target="_blank" rel="noopener" style="--i:1; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 02</span>
+            <button class="fav-btn" data-fav="v9t2" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t2')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-tree" aria-hidden="true"></i></span>
+          <h3>Poppy Reserve, Roundhouse Flow Chart &amp; Organising a Debate</h3>
+          <p>IELTS Listening practice test featuring Poppy Reserve, Roundhouse Flow Chart, Organising a Debate.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 3 winsham farm vacation jobs textbook disadvantages" data-test="v9t3" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%203%20LISTENING.html" target="_blank" rel="noopener" style="--i:2; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 03</span>
+            <button class="fav-btn" data-fav="v9t3" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t3')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-tractor" aria-hidden="true"></i></span>
+          <h3>Winsham Farm, Vacation Jobs &amp; Textbook Disadvantages</h3>
+          <p>IELTS Listening practice test featuring Winsham Farm, Vacation Jobs, Textbook Disadvantages.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 4 weekend course booking form denford festival attractions action research course notes/tables" data-test="v9t4" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%204%20LISTENING.html" target="_blank" rel="noopener" style="--i:3; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 04</span>
+            <button class="fav-btn" data-fav="v9t4" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t4')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
+          <h3>Weekend Course Booking Form, Denford Festival Attractions &amp; Action Research Course Notes/tables</h3>
+          <p>IELTS Listening practice test featuring Weekend Course Booking Form, Denford Festival Attractions, Action Research Course Notes/tables.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 5 tea taster village map labelling waste disposal advice" data-test="v9t5" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%205%20LISTENING.html" target="_blank" rel="noopener" style="--i:4; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 05</span>
+            <button class="fav-btn" data-fav="v9t5" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t5')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-tree" aria-hidden="true"></i></span>
+          <h3>Tea Taster, Village Map Labelling &amp; Waste Disposal Advice</h3>
+          <p>IELTS Listening practice test featuring Tea Taster, Village Map Labelling, Waste Disposal Advice.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 6 kiwi air complaint form apartment complex map reasons for cycling" data-test="v9t6" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%206%20LISTENING.html" target="_blank" rel="noopener" style="--i:5; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 06</span>
+            <button class="fav-btn" data-fav="v9t6" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t6')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+          <h3>Kiwi Air Complaint Form, Apartment Complex Map &amp; Reasons for Cycling</h3>
+          <p>IELTS Listening practice test featuring Kiwi Air Complaint Form, Apartment Complex Map, Reasons for Cycling.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 7 car servicing form rosedale library pictures information" data-test="v9t7" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%207%20LISTENING.html" target="_blank" rel="noopener" style="--i:6; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 07</span>
+            <button class="fav-btn" data-fav="v9t7" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t7')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+          <h3>Car Servicing Form, Rosedale Library &amp; Pictures Information</h3>
+          <p>IELTS Listening practice test featuring Car Servicing Form, Rosedale Library, Pictures Information.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+        <a class="card" data-search="volume 9 test 8 call record card outdoor education centre things to do" data-test="v9t8" data-volume="9" href="https://shirinqulovboborahim36-sudo.github.io/VOLUME-1-9-MATERIALS-LISTENING/VOLUME%209%20TEST%208%20LISTENING.html" target="_blank" rel="noopener" style="--i:7; --glow:rgba(101,163,13,0.28); --accent:#65a30d;">
+          <div class="done-ribbon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          <div class="card-top">
+            <span class="tag">VOL 9 &middot; TEST 08</span>
+            <button class="fav-btn" data-fav="v9t8" type="button" aria-label="Toggle favorite" onclick="event.preventDefault();event.stopPropagation();toggleFav('v9t8')"><i class="fa-solid fa-star"></i></button>
+          </div>
+          <span class="icon-badge" style="background:rgba(101,163,13,0.14); color:#65a30d;"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <h3>Call Record Card, Outdoor Education Centre &amp; Things to Do</h3>
+          <p>IELTS Listening practice test featuring Call Record Card, Outdoor Education Centre, Things to Do.</p>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+            <span><i class="fa-regular fa-circle-question" aria-hidden="true"></i>40 questions</span>
+          </div>
+          <span class="go">Open test <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="empty" id="noResults"><i class="fa-solid fa-box-open"></i>No tests match your search.</div>
+    </main>
+
+    <div id="printLog">
+      <h1>IELTS Listening &mdash; Practice Log</h1>
+      <div class="print-sub" id="printLogSub"></div>
+      <table id="printLogTable">
+        <thead><tr><th>Volume</th><th>Test</th><th>Title</th><th>Status</th><th>Favorite</th></tr></thead>
+        <tbody id="printLogBody"></tbody>
+      </table>
+    </div>
+
+    <footer>
+      Built for <a href="https://t.me/IELTSWithSPAXCE" target="_blank" rel="noopener">@IELTSWITHSPAXCE</a> &middot; IELTS Listening Practice &middot; Volumes 1&ndash;9
+    </footer>
+  </div>
+
+<script>
+(function () {
+  var TOTAL = 78;
+  var PROGRESS_KEY = 'ielts_listening_v1_progress';
+  var FAV_KEY = 'ielts_listening_v1_favorites';
+  var THEME_KEY = 'ielts_listening_v1_theme';
+  var GOAL_KEY = 'ielts_listening_v1_goal';
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card[data-test]'));
+
+  function loadJSON(key, fallback) { try { var v = JSON.parse(localStorage.getItem(key)); return v || fallback; } catch (e) { return fallback; } }
+  function saveJSON(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {} }
+
+  function loadProgress() { return loadJSON(PROGRESS_KEY, {}); }
+  function saveProgress(p) { saveJSON(PROGRESS_KEY, p); }
+  function markExplored(id) {
+    var p = loadProgress();
+    if (!p[id]) {
+      p[id] = Date.now();
+      saveProgress(p);
+      renderProgress();
+      renderPick();
+      renderPlan();
+    }
+  }
+
+  function loadFavorites() { return loadJSON(FAV_KEY, {}); }
+  function saveFavorites(f) { saveJSON(FAV_KEY, f); }
+
+  window.toggleFav = function (id) {
+    var f = loadFavorites();
+    f[id] = !f[id];
+    if (!f[id]) delete f[id];
+    saveFavorites(f);
+    renderFavorites();
+    applyFilters();
+    showToast(f[id] ? 'Added to favorites' : 'Removed from favorites');
+  };
+
+  function renderFavorites() {
+    var f = loadFavorites();
+    var count = 0;
+    cards.forEach(function (card) {
+      var id = card.getAttribute('data-test');
+      var btn = card.querySelector('.fav-btn');
+      var on = !!f[id];
+      if (on) count++;
+      if (btn) btn.classList.toggle('is-fav', on);
+    });
+    var stat = document.getElementById('favCountStat');
+    if (stat) stat.textContent = count;
+  }
+
+  function renderProgress() {
+    var p = loadProgress();
+    var done = 0;
+    cards.forEach(function (card) {
+      var id = card.getAttribute('data-test');
+      var isDone = !!p[id];
+      if (isDone) done++;
+      card.classList.toggle('is-explored', isDone);
+    });
+    var pct = Math.round((done / TOTAL) * 100);
+    var circumference = 2 * Math.PI * 22;
+    var offset = circumference - (circumference * done / TOTAL);
+    var fill = document.getElementById('progressRingFill');
+    if (fill) { fill.style.strokeDasharray = circumference.toFixed(1); fill.style.strokeDashoffset = offset.toFixed(1); }
+    var label = document.getElementById('progressRingLabel'); if (label) label.textContent = pct + '%';
+    var countEl = document.getElementById('progressCount'); if (countEl) countEl.textContent = done;
+
+    /* streak: consecutive days (ending today or yesterday) with at least one explored test */
+    var days = {};
+    Object.keys(p).forEach(function (id) {
+      var d = new Date(p[id]);
+      var key = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
+      days[key] = true;
+    });
+    var streak = 0;
+    var cursor = new Date(); cursor.setHours(0, 0, 0, 0);
+    var todayKey = cursor.getFullYear() + '-' + cursor.getMonth() + '-' + cursor.getDate();
+    if (!days[todayKey]) { cursor.setDate(cursor.getDate() - 1); }
+    while (true) {
+      var key = cursor.getFullYear() + '-' + cursor.getMonth() + '-' + cursor.getDate();
+      if (days[key]) { streak++; cursor.setDate(cursor.getDate() - 1); } else { break; }
+    }
+    var streakEl = document.getElementById('streakStat'); if (streakEl) streakEl.textContent = streak;
+  }
+
+  var toastEl = document.getElementById('toast'), toastMsg = document.getElementById('toastMsg'), toastTimer;
+  function showToast(msg) {
+    if (!toastEl) return;
+    toastMsg.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* ---------- open a real test file, marking it explored ---------- */
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      var id = card.getAttribute('data-test');
+      markExplored(id);
+      card.classList.add('opening');
+      setTimeout(function () { card.classList.remove('opening'); }, 260);
+    });
+  });
+
+  document.getElementById('progressResetBtn').addEventListener('click', function () {
+    if (!confirm('Reset your explored/favorites tracking for this device? This does not affect any test scores.')) return;
+    localStorage.removeItem(PROGRESS_KEY);
+    localStorage.removeItem(FAV_KEY);
+    renderProgress();
+    renderFavorites();
+    renderPick();
+    renderPlan();
+    applyFilters();
+    showToast('Progress reset');
+  });
+
+  document.getElementById('copySummaryBtn').addEventListener('click', function () {
+    var p = loadProgress();
+    var doneCount = Object.keys(p).length;
+    var lines = ['My IELTS Listening practice \u2014 Volumes 1\u20139'];
+    lines.push(doneCount + ' of ' + TOTAL + ' tests explored');
+    var text = lines.join('\n');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { showToast('Summary copied to clipboard'); })
+        .catch(function () { showToast('Could not copy \u2014 try selecting manually'); });
+    } else {
+      showToast('Clipboard not available in this browser');
+    }
+  });
+
+  document.getElementById('surpriseBtn').addEventListener('click', function () {
+    var visible = cards.filter(function (c) { return c.style.display !== 'none'; });
+    var pool = visible.length ? visible : cards;
+    var progress = loadProgress();
+    var unexplored = pool.filter(function (c) { return !progress[c.getAttribute('data-test')]; });
+    var finalPool = unexplored.length ? unexplored : pool;
+    var pick = finalPool[Math.floor(Math.random() * finalPool.length)];
+    var vol = pick.getAttribute('data-volume');
+    if (!inSearchMode()) setDrawerOpen(vol, true, true);
+    setTimeout(function () {
+      pick.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      pick.style.outline = '3px solid var(--indigo)';
+      pick.style.outlineOffset = '3px';
+      setTimeout(function () { pick.style.outline = ''; pick.style.outlineOffset = ''; }, 1400);
+    }, inSearchMode() ? 0 : 120);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
+      e.preventDefault();
+      document.getElementById('searchInput').focus();
+    }
+    if (e.key === 'Enter' && document.activeElement === document.getElementById('searchInput')) {
+      var firstVisible = cards.filter(function (c) { return c.style.display !== 'none'; })[0];
+      if (firstVisible) firstVisible.click();
+    }
+  });
+
+  /* ---------- today's pick ---------- */
+  function dateSeed() {
+    var d = new Date();
+    var s = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+    var h = 0;
+    for (var i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) >>> 0; }
+    return h;
+  }
+  function renderPick() {
+    var progress = loadProgress();
+    var unexplored = cards.filter(function (c) { return !progress[c.getAttribute('data-test')]; });
+    var pool = unexplored.length ? unexplored : cards;
+    var idx = dateSeed() % pool.length;
+    var pick = pool[idx];
+    if (!pick) return;
+    var title = pick.querySelector('h3').textContent;
+    var tag = pick.querySelector('.tag').textContent;
+    var iconClass = pick.querySelector('.icon-badge i').className;
+    var pickId = pick.getAttribute('data-test');
+    var pickHref = pick.getAttribute('href');
+    document.getElementById('pickEyebrow').textContent = tag + (unexplored.length ? ' \u00b7 not yet explored' : ' \u00b7 all caught up \u2014 revisit one');
+    document.getElementById('pickTitle').textContent = title;
+    document.getElementById('pickIcon').className = iconClass;
+    document.getElementById('pickGo').setAttribute('href', pickHref);
+    document.getElementById('pickGo').onclick = function () { markExplored(pickId); };
+  }
+
+  /* ---------- reading plan ---------- */
+  var planText = document.getElementById('planText');
+  var planActionsIdle = document.getElementById('planActionsIdle');
+  var planActionsActive = document.getElementById('planActionsActive');
+  var planDateInput = document.getElementById('planDateInput');
+
+  function renderPlan() {
+    var goal = loadJSON(GOAL_KEY, null);
+    var progress = loadProgress();
+    var done = Object.keys(progress).length;
+    var remaining = Math.max(0, TOTAL - done);
+    if (!goal || !goal.date) {
+      planActionsIdle.style.display = 'flex';
+      planActionsActive.style.display = 'none';
+      planText.innerHTML = 'Set a target date and I&rsquo;ll work out a daily pace to get through all ' + TOTAL + ' tests.';
+      return;
+    }
+    planActionsIdle.style.display = 'none';
+    planActionsActive.style.display = 'flex';
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var target = new Date(goal.date + 'T00:00:00');
+    var daysLeft = Math.ceil((target - today) / 86400000);
+    if (remaining === 0) {
+      planText.innerHTML = '<b>All ' + TOTAL + ' tests explored.</b> Nice work \u2014 clear this goal or set a new one.';
+    } else if (daysLeft <= 0) {
+      planText.innerHTML = '<b>' + remaining + ' test' + (remaining === 1 ? '' : 's') + ' left</b> and your target date has passed \u2014 pick a new date to keep pacing.';
+    } else {
+      var perDay = Math.ceil(remaining / daysLeft);
+      planText.innerHTML = '<b>' + remaining + ' of ' + TOTAL + '</b> tests to go \u2014 finish by ' + target.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ' at about <b>' + perDay + '/day</b>.';
+    }
+  }
+
+  document.getElementById('planSetBtn').addEventListener('click', function () {
+    if (!planDateInput.value) { showToast('Pick a date first'); return; }
+    saveJSON(GOAL_KEY, { date: planDateInput.value });
+    renderPlan();
+    showToast('Goal set');
+  });
+  document.getElementById('planClearBtn').addEventListener('click', function () {
+    localStorage.removeItem(GOAL_KEY);
+    renderPlan();
+    showToast('Goal cleared');
+  });
+
+  /* ---------- printable practice log ---------- */
+  document.getElementById('printLogBtn').addEventListener('click', function () {
+    var progress = loadProgress();
+    var favorites = loadFavorites();
+    var tbody = document.getElementById('printLogBody');
+    tbody.innerHTML = '';
+    cards.forEach(function (card) {
+      var id = card.getAttribute('data-test');
+      var vol = card.getAttribute('data-volume');
+      var tag = card.querySelector('.tag').textContent;
+      var testNum = tag.split('TEST')[1] ? tag.split('TEST')[1].trim() : '';
+      var title = card.querySelector('h3').textContent;
+      var done = progress[id];
+      var status = done ? ('Explored ' + new Date(done).toLocaleDateString()) : 'Not yet';
+      var fav = favorites[id] ? 'Yes' : '';
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + vol + '</td><td>' + testNum + '</td><td>' + title + '</td><td>' + status + '</td><td>' + fav + '</td>';
+      tbody.appendChild(tr);
+    });
+    var done = Object.keys(progress).length;
+    document.getElementById('printLogSub').textContent = done + ' of ' + TOTAL + ' tests explored \u2014 printed ' + new Date().toLocaleDateString();
+    window.print();
+  });
+
+  /* ---------- shelf: spines + drawers ---------- */
+  var spines = Array.prototype.slice.call(document.querySelectorAll('.spine[data-spine]'));
+  var drawers = Array.prototype.slice.call(document.querySelectorAll('.drawer[data-volume]'));
+  var OPEN_KEY = 'ielts_v19_open_spines_v4';
+  var manualOpen = loadJSON(OPEN_KEY, {});
+
+  function setDrawerOpen(vol, open, persist) {
+    var drawer = document.getElementById('drawer-' + vol);
+    var spine = document.getElementById('spine-' + vol);
+    if (drawer) drawer.classList.toggle('open', open);
+    if (spine) spine.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (persist) { manualOpen[vol] = open; saveJSON(OPEN_KEY, manualOpen); }
+  }
+  spines.forEach(function (spine) {
+    var vol = spine.getAttribute('data-spine');
+    setDrawerOpen(vol, !!manualOpen[vol], false);
+    spine.addEventListener('click', function () {
+      if (inSearchMode()) return;
+      var nowOpen = spine.getAttribute('aria-expanded') !== 'true';
+      setDrawerOpen(vol, nowOpen, true);
+    });
+  });
+
+  var shelfToggleBtn = document.getElementById('shelfToggleBtn');
+  var allExpanded = false;
+  shelfToggleBtn.addEventListener('click', function () {
+    allExpanded = !allExpanded;
+    spines.forEach(function (spine) { setDrawerOpen(spine.getAttribute('data-spine'), allExpanded, true); });
+    shelfToggleBtn.innerHTML = allExpanded
+      ? '<i class="fa-solid fa-down-left-and-up-right-to-center" style="margin-right:6px;"></i>Collapse all'
+      : '<i class="fa-solid fa-up-right-and-down-left-from-center" style="margin-right:6px;"></i>Expand all';
+  });
+
+  /* ---------- search / filter ---------- */
+  var activeFilter = 'all';
+  var searchInput = document.getElementById('searchInput');
+  var noResults = document.getElementById('noResults');
+  var countEl = document.getElementById('visibleCount');
+  var resultsBar = document.getElementById('resultsBar');
+  var resultsBarText = document.getElementById('resultsBarText');
+
+  function inSearchMode() { return searchInput.value.trim() !== '' || activeFilter !== 'all'; }
+
+  function applyFilters() {
+    var progress = loadProgress();
+    var favorites = loadFavorites();
+    var q = searchInput.value.trim().toLowerCase();
+    var visibleCount = 0;
+    var searchMode = inSearchMode();
+
+    drawers.forEach(function (drawer) {
+      var vol = drawer.getAttribute('data-volume');
+      var sectionVisible = 0;
+      var sectionCards = drawer.querySelectorAll('.card[data-test]');
+      sectionCards.forEach(function (card) {
+        var haystack = card.getAttribute('data-search') || '';
+        var matchesSearch = haystack.indexOf(q) !== -1;
+        var id = card.getAttribute('data-test');
+        var isDone = !!progress[id];
+        var isFav = !!favorites[id];
+        var matchesFilter = activeFilter === 'all' || (activeFilter === 'explored' && isDone) || (activeFilter === 'unexplored' && !isDone) || (activeFilter === 'favorites' && isFav);
+        var show = matchesSearch && matchesFilter;
+        card.style.display = show ? '' : 'none';
+        if (show) { sectionVisible++; visibleCount++; }
+      });
+      var spine = document.getElementById('spine-' + vol);
+      if (spine) spine.style.display = (searchMode && sectionVisible === 0) ? 'none' : '';
+      if (searchMode) setDrawerOpen(vol, sectionVisible > 0, false);
+      else setDrawerOpen(vol, !!manualOpen[vol], false);
+    });
+
+    resultsBar.style.display = searchMode ? 'flex' : 'none';
+    if (searchMode) {
+      var bits = [];
+      if (q) bits.push('\u201c' + searchInput.value.trim() + '\u201d');
+      if (activeFilter !== 'all') bits.push(activeFilter === 'favorites' ? 'bookmarked' : activeFilter);
+      resultsBarText.textContent = visibleCount + ' test' + (visibleCount === 1 ? '' : 's') + ' matching ' + bits.join(' \u00b7 ') + '.';
+    }
+
+    noResults.style.display = (visibleCount === 0) ? 'block' : 'none';
+    if (countEl) countEl.textContent = visibleCount;
+  }
+
+  document.getElementById('clearFiltersBtn').addEventListener('click', function () {
+    searchInput.value = '';
+    activeFilter = 'all';
+    document.querySelectorAll('#filterChips .chip').forEach(function (c) { c.classList.remove('active'); });
+    document.querySelector('#filterChips .chip[data-filter="all"]').classList.add('active');
+    applyFilters();
+  });
+
+  document.getElementById('filterChips').addEventListener('click', function (e) {
+    var chip = e.target.closest('.chip');
+    if (!chip) return;
+    document.querySelectorAll('#filterChips .chip').forEach(function (c) { c.classList.remove('active'); });
+    chip.classList.add('active');
+    activeFilter = chip.getAttribute('data-filter');
+    applyFilters();
+  });
+
+  searchInput.addEventListener('input', applyFilters);
+
+  document.getElementById('viewToggle').addEventListener('click', function (e) {
+    var btn = e.target.closest('.view-btn');
+    if (!btn) return;
+    document.querySelectorAll('#viewToggle .view-btn').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var isList = btn.getAttribute('data-view') === 'list';
+    document.querySelectorAll('.grid').forEach(function (g) { g.classList.toggle('view-list', isList); });
+  });
+
+  var darkBtn = document.getElementById('darkModeBtn');
+  function applyTheme(dark) {
+    document.body.classList.toggle('dark-mode', dark);
+    darkBtn.classList.toggle('is-on', dark);
+    darkBtn.innerHTML = dark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  }
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem(THEME_KEY); } catch (e) {}
+  applyTheme(savedTheme === 'dark');
+  darkBtn.addEventListener('click', function () {
+    var isDark = !document.body.classList.contains('dark-mode');
+    applyTheme(isDark);
+    try { localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light'); } catch (e) {}
+  });
+
+  renderProgress();
+  renderFavorites();
+  renderPick();
+  renderPlan();
+  applyFilters();
+
+  /* ---------- ambient dust motes ---------- */
+  (function initDustMotes() {
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var container = document.getElementById('dustMotes');
+    if (!container || reduceMotion) return;
+    var count = 9;
+    for (var i = 0; i < count; i++) {
+      var mote = document.createElement('span');
+      mote.className = 'mote';
+      var size = 3 + Math.random() * 5;
+      var left = Math.random() * 100;
+      var duration = 14 + Math.random() * 12;
+      var delay = -(Math.random() * duration);
+      var dx = (Math.random() * 60 - 30).toFixed(0) + 'px';
+      mote.style.cssText =
+        'width:' + size + 'px; height:' + size + 'px; left:' + left + '%; bottom:-20px;' +
+        'animation-duration:' + duration + 's; animation-delay:' + delay + 's; --dx:' + dx + ';';
+      container.appendChild(mote);
+    }
+  })();
+
+  window.addEventListener('focus', function () { renderProgress(); renderFavorites(); renderPlan(); });
+  window.addEventListener('storage', function () { renderProgress(); renderFavorites(); renderPlan(); });
+})();
+</script>
+</body>
+</html>
